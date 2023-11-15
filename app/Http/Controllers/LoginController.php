@@ -20,7 +20,7 @@ class LoginController extends Controller
 
         return view('login.index ');
     }
-
+    //----- Logout -----//
     public function logOut()
     {
         Session::flush();
