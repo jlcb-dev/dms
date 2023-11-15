@@ -28,7 +28,7 @@ class LoginController extends Controller
 
         return redirect('login');
     }
-
+    //----- Login -----//
     public function login(Request $request)
     {
         $request->validate([
