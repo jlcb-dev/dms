@@ -39,12 +39,12 @@ class LoginController extends Controller
         $credentials = $request->only('username', 'password');
 
         if (Auth::attempt($credentials)) {
-
+  
             $user = Auth::user();
-            $username       = $user->username;
-            $full_name     = $user->full_name;
-            $access_rights         = $user->access_rights;
-            $active         = $user->active;
+            $username        = $user->username;
+            $full_name       = $user->full_name;
+            $access_rights   = $user->access_rights;
+            $active          = $user->active;
 
             if ($active == 'Y') {
                 //SET Session
